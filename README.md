@@ -23,6 +23,6 @@ Burglyf: Indulge in a delightful online food shopping experience! Explore a wide
 - MongoDB
 - TenStack query
 - Axios
-- Redux
 - sslcommerz
+
 # burgry-client

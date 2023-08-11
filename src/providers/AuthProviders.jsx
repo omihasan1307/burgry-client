@@ -42,10 +42,7 @@ const AuthProviders = ({ children }) => {
     });
   };
 
-  const googleSignIn = () => {
-    setLoading(true);
-    return signInWithPopup(auth, googleProvider);
-  };
+  const googleSignIn = () => signInWithPopup(auth, googleProvider);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {

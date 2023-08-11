@@ -13,7 +13,7 @@ import { enqueueSnackbar } from "notistack";
 
 const MyOrder = () => {
   const [order, refetch, isLoading] = useOrderCollecionForUser();
-  console.log(order);
+
   const { user } = useMyContext();
   const [instance] = useAxiosSecure();
   const handleDelete = (id) => {

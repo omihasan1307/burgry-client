@@ -13,7 +13,7 @@ const MenuDetails = () => {
   const [item, setItem] = useState({});
   useTitle(`${item?.productName}`);
   const [count, setCount] = useState(1);
-  const { user, loading, role } = useMyContext();
+  const { user, role } = useMyContext();
   const [instance] = useAxiosSecure();
   const { id } = useParams();
   const navigate = useNavigate();

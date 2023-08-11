@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Message = () => {
   return (
-    <div className="max-w-screen-xl mx-auto my-32">
+    <div className="max-w-screen-xl mx-auto my-32 px-2">
       <div className="grid lg:grid-cols-2 gap-20">
         <div>
           <div>
@@ -24,9 +24,9 @@ const Message = () => {
               penatibus et magnis dis parturient montes.
             </p>
 
-            <div className="grid lg:grid-cols-2 place-content-center lg:gap-10 my-10">
+            <div className="grid lg:grid-cols-2  lg:place-content-center  lg:gap-10 my-10 ">
               <div>
-                <div className="flex  items-center mb-10 lg:mb-12">
+                <div className="flex items-center  mb-10 lg:mb-12">
                   <FontAwesomeIcon
                     className="text-yellow-500 w-[50px] h-[50px]"
                     icon={faLocationPin}
@@ -79,7 +79,7 @@ const Message = () => {
               </div>
             </div>
             <hr className="border-4 border-slate-800 my-8" />
-            <div className="my-6 grid lg:grid-cols-3 place-content-center items-center">
+            <div className="my-6 grid lg:grid-cols-3 lg:place-content-center items-center">
               <div className="col-span-2 text-2xl text-white font-bold">
                 OUR SOCIAL MEDIA
               </div>

@@ -26,12 +26,12 @@ const MyCart = () => {
   const handleDelete = (id) => {
     instance
       .delete(`/cartItemDelete/${id}?uid=${user?.uid}`)
-      .then((res) => {
+      .then(() => {
         refetch();
         enqueueSnackbar(`Hi , Your Cart Item has been Deleted Successfully `, {
           variant: "success",
         });
-        console.log(res.data);
+      
       })
       .catch((err) => {
         console.log(err);

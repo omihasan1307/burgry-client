@@ -7,7 +7,7 @@ import { Slide } from "react-awesome-reveal";
 const AboutHome = () => {
   return (
     <div className="max-w-screen-xl mx-auto ">
-      <div className="grid lg:grid-cols-2 gap-8 px-2 lg:px-0 place-items-center">
+      <div className="grid lg:grid-cols-2 gap-8 px-5 lg:px-0 place-items-center">
         <Slide triggerOnce={true}>
           <div className="w-full h-5/6  ">
             <img

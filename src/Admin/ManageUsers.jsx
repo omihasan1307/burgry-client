@@ -12,9 +12,8 @@ const ManageUsers = () => {
   const [instance] = useAxiosSecure();
   const { user } = useMyContext();
   const [manageUsers, refetch, isLoading] = useManageUsers();
-  console.log(manageUsers);
+
   const handleClick = (data) => {
-    console.log(data);
     instance
       .delete(`/users/${data._id}?uid=${user?.uid}&fid=${data.userUID}`)
       .then(() => {

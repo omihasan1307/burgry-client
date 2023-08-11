@@ -22,7 +22,6 @@ const AdminPrivateRoute = ({ children }) => {
       </p>
     );
   }
-  console.log(user, role);
 
   if (user && role === "admin") {
     return children;

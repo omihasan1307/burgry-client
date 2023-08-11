@@ -10,10 +10,7 @@ const ManageOrders = () => {
 
   const [allOrders, refetch, isLoading] = useAdminOrder();
 
-  console.log(allOrders);
-
   const handleUpdate = (id) => {
-    console.log(id);
     instance.patch(`/orderUpdate/${id}?uid=${user?.uid}`).then(() => {
       refetch();
       enqueueSnackbar(
