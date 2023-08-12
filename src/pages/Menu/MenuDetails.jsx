@@ -8,6 +8,7 @@ import { enqueueSnackbar } from "notistack";
 import { CUSTOMER } from "../../utilities/constant";
 import useTitle from "../../hooks/UseTitle";
 import useMyContext from "../../hooks/useMyContext";
+import useUserCart from "../../hooks/useUserCart";
 
 const MenuDetails = () => {
   const [item, setItem] = useState({});
@@ -17,6 +18,7 @@ const MenuDetails = () => {
   const [instance] = useAxiosSecure();
   const { id } = useParams();
   const navigate = useNavigate();
+  const [cartItem, refetch, isLoading] = useUserCart();
 
   useEffect(() => {
     axios
